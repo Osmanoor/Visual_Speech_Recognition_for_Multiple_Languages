@@ -22,7 +22,7 @@ else:
 st.video(video_file)
 
 #Predict The Text
-result = pipeline.VSR(temp_file.name)
+result = pipeline.VSR(video_file)
 st.text("You said: " + result)
 
 #Crop video
