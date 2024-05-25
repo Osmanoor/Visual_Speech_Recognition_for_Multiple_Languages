@@ -16,7 +16,7 @@ if uploaded_file is not None:
     # Display the uploaded video
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         temp_file.write(uploaded_file.read())
-        video_file = temp_file.file
+        video_file = temp_file.name
 else:
     video_file = "download.mp4"
 st.video(video_file)
