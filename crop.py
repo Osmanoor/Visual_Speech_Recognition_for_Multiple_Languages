@@ -5,7 +5,7 @@ from pipelines.data.data_module import AVSRDataLoader
 from pipelines.detectors.mediapipe.detector import LandmarksDetector
 
 def save2vid(filename, vid, frames_per_second):
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    #os.makedirs(os.path.dirname(filename), exist_ok=True)
     torchvision.io.write_video(filename, vid, frames_per_second)
 
 def preprocess_video(src_filename, dst_filename):
